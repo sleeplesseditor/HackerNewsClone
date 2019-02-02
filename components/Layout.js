@@ -10,7 +10,9 @@ const Layout = ({ children, title }) => (
             <nav>
                 <Link>
                     <a>
-                        <span className="title">HackerNews Clone</span>
+                        <span className="main-title">
+                            <a href="/">HackerNews Clone</a>
+                        </span>
                     </a>
                 </Link>
             </nav>
@@ -22,6 +24,8 @@ const Layout = ({ children, title }) => (
                 max-width: 960px;
                 margin 0 auto;
                 background: #f6f6ee;
+                display: flex;
+                flex-direction: column;
             }
             nav {
                 background: #ffa600;
@@ -37,14 +41,22 @@ const Layout = ({ children, title }) => (
                 text-decoration: none;
             }
 
+            nav a:hover,
+            nav a:visited {
+                color: #000000;
+            } 
+
             nav .main-title {
                 font-weight: bold;
+                font-size: 1.5rem;
             }
+
         `}</style>
         <style global jsx>
             {`
                 body {
                     background: white;
+                    font-family: sans-serif;
                 }
             `}
         </style>

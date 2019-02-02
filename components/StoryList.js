@@ -32,13 +32,13 @@ const StoryList = ({ stories }) => (
                     margin: 0;
                     margin-bottom: 0.5rem;
                 }
-                .story title a {
+                .story-title a {
                     color: #444444;
                     text-decoration: none;
                 }
-                .story title a:hover,
-                .story detail a:hover {
-                    text-decoration: underline;
+                .story-title a:hover,
+                .story-detail a:hover {
+                    color: #d8d8d8;
                 }
                 .story-detail {
                     font-size: 0.8rem;
